@@ -1,0 +1,14 @@
+name: svm-labs
+dependencies:
+    - jupyter=1.0.0
+    - scipy=1.1.0
+    - numpy=1.15.1
+    - pandas=0.23.4
+    - matplotlib=2.2.2
+    - bokeh=0.13.0
+    - scikit-learn=0.19.1
+    - geopandas=0.4.0
+    - folium=0.6.0
+    - holoviews=1.10.7
+    - geoviews=1.5.1
+    
