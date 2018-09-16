@@ -39,4 +39,37 @@ Follow these steps:
   ```
   jupyter notebook
   ```
-  
+
+### Manually
+
+If the above fails for whichever reason or notebooks do not work, do as follows:
+   
+1. Open an Anaconda Prompt terminal.
+2. Remove the previously created conda environment (if any) with:
+  ```
+  conda env remove -n svm_labs
+  ```
+3. Create the environment from scratch with:
+  ```
+  conda env create -n svm_labs python=3.6
+  ```
+4. Activate the environment by doing:
+  ```
+  activate svm_labs
+  ```
+
+5. Install the packages specified in *environment_windows.yml* file one by one, first trying with *conda* and if that does not work with *pip*. For example, the first package in the file is *jupyter=1.0.0*, so we try first:
+  ```
+  conda install jupyter=1.0.0
+  ```
+  And if that doesn't work:
+  ```
+  pip install jupyter==1.0.0
+  ```
+  Beware that *pip* requires double *==* signs for versions, while *conda* just expects one *=*.
+
+6. When finished, launch Jupyter notebook:
+  ```
+  jupyter notebook
+  ```
+
