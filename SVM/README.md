@@ -1,6 +1,6 @@
 # SVM Labs Environments
 
-First make sure you have a working Python 3 Conda distribution, then follow the next steps depending on your operative system.
+First make sure you have a working Python 3 Conda distribution, then follow the next steps depending on your operating system.
 
 ## Windows
 
