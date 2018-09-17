@@ -1,8 +1,70 @@
 # SVM Labs Environments
 
-First make sure you have a working Python 3 Conda distribution, then follow the next steps depending on your operating system.
+First make sure you have a working <a href="https://www.anaconda.com/download/#linux">Python 3 Conda Linux distribution</a>, then follow the next steps.
+
+## Linux
+
+### With shell
+
+Follow these steps:
+
+1. Download the environment file *environment_linux.yml* to your computer.
+2. Open a shell terminal. Then type this (*<route_yml>* in the route where you downloaded *environment_linux.yml*):
+  ```
+  conda env create -f <route_yml>
+  ```
+
+3. Wait for the environment to install (it may take some minutes to install all packages and dependencies).
+4. Type the following. The terminal should reflect the activation and prompt afterwards *(svm_labs)*.
+  ```
+  source activate svm_labs
+  ```
+  
+5. Start the Jupyter notebook server by typing:
+  ```
+  jupyter notebook
+  ```
+  
+### Manually
+
+If the above fails for whichever reason or notebooks do not work, do as follows:
+   
+1. Open a shell terminal.
+2. Remove the previously created conda environment (if any) with:
+  ```
+  conda env remove -n svm_labs
+  ```
+3. Create the environment from scratch with:
+  ```
+  conda env create -n svm_labs python=3.6
+  ```
+4. Activate the environment by doing:
+  ```
+  source activate svm_labs
+  ```
+
+5. Install the packages specified in *environment_linux.yml* file one by one, first trying with *conda* and if that does not work with *pip*. For example, the first package in the file is *jupyter=1.0.0*, so we try first:
+  ```
+  conda install jupyter=1.0.0
+  ```
+  And if that doesn't work:
+  ```
+  pip install jupyter==1.0.0
+  ```
+  Beware that *pip* requires double *==* signs for versions, while *conda* just expects one *=*. Note also that with *conda* some packages are not present in the default repositories, and you have to specify the *conda_forge* channel by hand via:
+  ```
+  conda install <package>=<version> -c conda-forge
+  ```
+
+6. When finished with all packages, launch Jupyter notebook:
+  ```
+  jupyter notebook
+  ```  
+
 
 ## Windows
+
+First make sure you have a working <a href="https://www.anaconda.com/download/#windows">Python 3 Conda Windows distribution</a>, then follow the next steps.
 
 ### With Anaconda Navigator
 
@@ -68,7 +130,7 @@ If the above fails for whichever reason or notebooks do not work, do as follows:
   ```
   Beware that *pip* requires double *==* signs for versions, while *conda* just expects one *=*.
 
-6. When finished, launch Jupyter notebook:
+6. When finished with all packages, launch Jupyter notebook:
   ```
   jupyter notebook
   ```
