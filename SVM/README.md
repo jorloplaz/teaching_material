@@ -1,4 +1,4 @@
-# SVM Labs Environments
+# SVM environment preparation
 
 Follow the instructions below corresponding to your operating system.
 
