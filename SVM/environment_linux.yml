@@ -1,4 +1,7 @@
 name: svm_labs
+channels:
+    - defaults
+    - conda-forge
 dependencies:
     - python>=3.5
     - jupyter=1.0.0
