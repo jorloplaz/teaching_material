@@ -1,8 +1,10 @@
 # SVM Labs Environments
 
-First make sure you have a working <a href="https://www.anaconda.com/download/#linux">Python 3 Conda Linux distribution</a>, then follow the next steps.
+Follow the instructions below corresponding to your operating system.
 
 ## Linux
+
+First make sure you have a working <a href="https://www.anaconda.com/download/#linux">Python 3 Conda Linux distribution</a>, then follow the next steps.
 
 ### With shell
 
