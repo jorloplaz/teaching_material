@@ -217,6 +217,8 @@ class View(object):
             self.ax.clear()
             self.ax.set_xticks([])
             self.ax.set_yticks([])
+            self.ax.set_xlim((x_min, x_max))
+            self.ax.set_ylim((y_min, y_max))
             self.contours = []
             self.lines = []
             self.c_labels = None
