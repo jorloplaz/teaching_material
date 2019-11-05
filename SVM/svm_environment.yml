@@ -1,0 +1,19 @@
+name: svm_labs
+channels:
+    - conda-forge
+dependencies:
+    - python>=3.6
+    - conda>=4.6
+    - numpy
+    - pandas
+    - matplotlib
+    - seaborn
+    - bokeh
+    - holoviews
+    - scikit-learn
+    - jupyter
+    - notebook
+    - descartes
+    - geopandas
+    - folium
+    
